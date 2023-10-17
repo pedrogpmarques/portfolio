@@ -8,6 +8,7 @@
     <title>Portfolio Project</title>
 </head>
 <body>
+<section class="hidden">
     <header>
         <h1>Pedro <span>Marques</span></h1>
         <nav>
@@ -20,17 +21,36 @@
             </ul>
         </nav>
     </header>
+<section>
+    <section class="hidden">
     <section aria-label="section de download do currículo" class="section-div">
         <div>
-            <h2>Hi! I'm Pedro and I'm a</h2>
-            <h2 class="writing">Coder // Web Developer // UX/UI Designer</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet nisi sed sapien congue vestibulum. 
-                Ut bibendum erat at imperdiet pellentesque. Donec nulla nulla, suscipit faucibus lorem sed, lobortis accumsan lectus.</p> 
+            <h2>Hi, my name is <span>Marques</span> and I'm a</h2>
+            <span id="writing"></span>
+            <p>Just a simple coder from Porto, Portugal. 🇵🇹 <br>Currently a student that wants to grow in the software industry.</p> 
             <a href="#">Download CV</a>   
         </div>
-        <img src="assets/img/foto CV.png" alt="Fotografia Pedro Marques">
+        <img src="assets/img/foto CV.png" alt="">
+    </section>
+    </section>
+    
+    <section>
+        <div class="aboutme">
+        </div>
+        
     </section>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#writing', {
+        // Waits 1000ms after typing "First"
+        strings: ['Junior FullStack Developer', 'Freelancer', 'Student'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 2500,
+        loop: true,
+        });
+    </script>   
 </body>
 </html>
