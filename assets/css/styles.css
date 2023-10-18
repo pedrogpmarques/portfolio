@@ -20,15 +20,36 @@ body {
 /* HEADER */
 
 header{
-    padding: 35px;
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: space-around ;
 }
+
+.lang{
+    align-items: center;
+    justify-content: center;
+}
+
+.lang img {
+    margin-top: 10px;
+    height: 20px;
+}
+
+.lang a {
+    opacity: 70%;
+    transition: all 300ms;
+}
+
+.lang a:hover {
+    opacity: 100%;;
+    transition: all 300ms;
+}
+
+
 
 header h1 {
     font-size: 2.5rem;
-    margin-left: 25px;
 }
 
 header span {
@@ -56,10 +77,18 @@ header .primary-nav li a {
     align-items: center;
     gap: 60px;
     padding: 60px;
+    margin-bottom: 8rem;
 }
 
-.section-div div {
-    margin-top: 120px;
+.section-div .socials {
+    margin-top: 20px;
+    align-self: start;
+    display: flexbox;
+    gap: 30px;
+}
+
+.section-div .cvdownload {
+    margin-top: 20px;
     align-self: start;
     display: flexbox;
     gap: 30px;
@@ -78,20 +107,33 @@ header .primary-nav li a {
     color: #f7f7f7;
 }
 
-.section-div div p{
+.section-div p{
     font-family: 'Poppins';
     font-weight: 200;
     color: #f7f7f7;
     margin-top: 1.5rem;
-    margin-bottom: 3rem;
 }
 
-.section-div div a {
+.section-div div .flagpt{
+    height: 12px;
+}
+
+.section-div div .cvdownload a {
     justify-self: start;
     color: rgb(0, 150, 255);
     padding: 15px 40px;
     border-radius: 5px;
     border: 2px solid rgb(0, 150, 255);
+    font-weight: 900;
+    box-shadow: 0 0 5px rgb(0, 150, 255);
+}
+
+.socials a {
+    display: inline-flex ;
+    margin-left: 13px;
+    margin-right: 14px;
+    align-self: bottom;
+    color: rgb(0, 150, 255);
 }
 
 .section-div img{
@@ -100,12 +142,13 @@ header .primary-nav li a {
 
 .section-div div span{
     color: rgb(0, 150, 255);
+    font-weight: 900;
 }
 
-
+/* ANIMACAO DE APARECER E DESAPARECER */
 .hidden {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(15px);
     transform: translateX(-100%);
     transition: all 1s;
 }
@@ -113,27 +156,46 @@ header .primary-nav li a {
 .show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
+    transform: translateX(0%);
 }
 
-.o-caralho{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 998;
+/*SERVICES COLUNA*/
+
+#services div {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
 }
 
-.o-caralho img{
-    width: 100%;
-    height: 100%;
-    z-index: 998;
+#services h1{
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
 }
 
-.o-caralho h1{
-    position: absolute;
-    margin: auto;
-    z-index: 999;
+#services span{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 40px;
+    color: rgb(0, 150, 255);
+}
+
+#services .box{
+    border: 2px;
+    border-color: #f7f7f7;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: rgb(0, 150, 255);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(0, 150, 255);
+    color: #fff;
+    margin: 3rem 1.5rem 3rem 0;
 }
