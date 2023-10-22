@@ -162,8 +162,8 @@ header .primary-nav li a:hover {
 /* ANIMACAO DE APARECER E DESAPARECER */
 .hidden {
     opacity: 0;
-    filter: blur(15px);
-    transform: translateX(-100%);
+    filter: blur(10px);
+    transform: translateX(-25%);
     transition: all 1s;
 }
 
@@ -181,6 +181,7 @@ header .primary-nav li a:hover {
     align-items: center;
     gap: 60px;
     padding: 60px;
+    margin-bottom: 200px;
 }
 
 
@@ -193,7 +194,7 @@ header .primary-nav li a:hover {
     margin-bottom: 40px;
 }
 
-#services span{
+#services .services-span{
     font-family: 'Poppins';
     font-weight: bolder;
     font-size: 40px;
@@ -214,13 +215,25 @@ header .primary-nav li a:hover {
 
 .services-box{
     padding: 30px;
-    display: grid ;
+    height: 500px;
+    width: 600px;
+    display: grid;
     justify-items: center;
     justify-content: center;
     justify-self: center;
     align-items: center;
-    border-radius: 20%;
+    border-radius: 40px;
     background: rgba(255, 255, 255, 0.1)
+}
+
+.services-box:nth-child(2){
+    transition-delay: .5s;
+}
+.services-box:nth-child(3){
+    transition-delay: 1s;
+}
+.services-box:nth-child(4){
+    transition-delay: 1.5s;
 }
 
 .services-box p{
@@ -228,7 +241,16 @@ header .primary-nav li a:hover {
 }
 
 .services-box i{
-    font-size: 50px;
+    font-size: 80px;
+    color: rgb(0, 150, 255);
+    text-shadow: 0px 0px 15px rgb(0, 150, 255)  ;
+}
+
+.title-color{
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(0, 150, 255);
 }
 
 .btn {
