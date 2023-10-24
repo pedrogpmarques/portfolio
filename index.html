@@ -18,7 +18,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#hireme">Hire me</a></li>
+                <li><a href="#hire">Hire me</a></li>
             </ul>
         </nav>
         <div class="lang">
@@ -74,61 +74,76 @@
 
     <section class="hidden" id="portfolio">
         <h1>My <span class="services-span hidden">Portfolio</span></h1>
-        <h2><span>Back-end</span> works</h2>
+        <h2><span>Back-end</span> works</h2><br>
         <div class="portfolio-container">
-            <div class="portfolio-box">
+            <div class="portfolio-box hidden">
 
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box hidden">
 
             </div>
 
-            <div class="portfolio-box">
-
+            <div class="portfolio-box hidden">
+                
             </div>
-            
-            <div class="portfolio-box">
-
-            </div>
+        </div>
+        <br>
         <h2><span>Front-end</span> works</h2>
+        <br>
         <div class="portfolio-container">
-            <div class="portfolio-box">
-
+            <div class="portfolio-box hidden">
+                
             </div>
 
-            <div class="portfolio-box">
-
+            <div class="portfolio-box hidden">
+                
             </div>
 
-            <div class="portfolio-box">
-
+            <div class="portfolio-box hidden">
+                
             </div>
-            
-            <div class="portfolio-box">
-
-            </div>
-            
+        </div>
+        <br>
         <h2><span>UI-UX Design</span> works</h2>
+        <br>
         <div class="portfolio-container">
-            <div class="portfolio-box">
-
+            <div class="portfolio-box hidden">
+                
             </div>
 
-            <div class="portfolio-box">
-
+            <div class="portfolio-box hidden">
+                
             </div>
 
-            <div class="portfolio-box">
-
-            </div>
-            
-            <div class="portfolio-box">
-
+            <div class="portfolio-box hidden">
+                
             </div>
         </div>
     </section>
 
+    <section id="hire" class="hidden">
+        <h1><span class="services-span">Hire</span> me</h1>
+        <form action="/submit" method="post" class="contact-form">
+            <div class="input-container">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="input-container" style="flex-basis: 100%;">
+                <textarea id="message" name="message" rows="10" placeholder="Message" required></textarea>
+            </div>
+            <div class="input-container" style="flex-basis: 100%;">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Pedro Marques
+    </footer>
+    
     <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
@@ -140,6 +155,6 @@
         backDelay: 2500,
         loop: true,
         });
-    </script>   
+    </script>
 </body>
 </html>
